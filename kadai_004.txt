@@ -1,0 +1,53 @@
+PS C:\Users\yamor\OneDrive\Documents\git_tutorial\.git> cd ..
+PS C:\Users\yamor\OneDrive\Documents\git_tutorial> cd ..  
+PS C:\Users\yamor\OneDrive\Documents> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\yamor\OneDrive\Documents
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2023/12/30     20:27                git_challenge
+
+
+PS C:\Users\yamor\OneDrive\Documents> cd git_challenge
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git init
+Initialized empty Git repository in C:/Users/yamor/OneDrive/Documents/git_challenge/.git/
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git add hello_world.txt
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git commit hello_world.txt "hello_world.txtを追加"
+error: pathspec 'hello_world.txtを追加' did not match any file(s) known to git
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git commit -m hello_world.txt
+[main (root-commit) 8cb5a29] hello_world.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+        status
+        stage
+        stash
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git add hello_world.txt
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git commit -m hello_world.txt
+[main 47a5981] hello_world.txt
+ 1 file changed, 1 insertion(+)
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\yamor\OneDrive\Documents\git_challenge> 
